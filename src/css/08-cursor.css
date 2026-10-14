@@ -1,0 +1,61 @@
+/* ─── CUSTOM CURSOR — brass dot + trailing ring (fine pointers only) ─── */
+
+.cursor-dot,
+.cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 400;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+.cursor-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--brass);
+}
+
+.cursor-ring {
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(165, 130, 74, .75);
+    display: grid;
+    place-items: center;
+    transition: width .35s var(--ease), height .35s var(--ease),
+        background-color .35s var(--ease), border-color .35s var(--ease);
+}
+
+.cursor-label {
+    font: 500 .58rem/1 var(--ui);
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--paper);
+    opacity: 0;
+    transition: opacity .25s var(--ease);
+}
+
+.cursor-ring.is-view {
+    width: 78px;
+    height: 78px;
+    background: var(--swan);
+    border-color: var(--swan);
+}
+
+.cursor-ring.is-view .cursor-label { opacity: 1; }
+
+.cursor-ring.is-link {
+    width: 58px;
+    height: 58px;
+    background: rgba(165, 130, 74, .14);
+}
+
+@media (pointer: coarse) {
+    .cursor-dot,
+    .cursor-ring { display: none; }
+}
+
+body.has-cursor,
+body.has-cursor a,
+body.has-cursor button,
+body.has-cursor [data-lb] { cursor: none; }

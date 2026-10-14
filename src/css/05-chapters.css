@@ -1,0 +1,195 @@
+/* ─── CHAPTER LAYOUTS — desktop editorial grids ───
+   Every spread is composed on a 12-column grid; columns and
+   offsets are the design. Mobile collapses in 09-responsive. */
+
+@media (min-width: 1100px) {
+
+    /* ══ I — Getting Ready ══
+       mirror (wide, left) / room (wide, right, dropped)        */
+    .prep-a {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: clamp(1rem, 2vw, 2rem);
+        margin-bottom: clamp(4rem, 9vh, 7rem);
+    }
+
+    .prep-a > .frame:first-child { grid-column: 1 / 8; }
+    .prep-a > .frame--drop { grid-column: 9 / 13; margin-top: 16vh; }
+
+    #ch-prep > .wrap > .intertitle--side {
+        margin-left: auto;
+        margin-bottom: clamp(4rem, 9vh, 7rem);
+        padding-right: clamp(0px, 4vw, 5rem);
+    }
+
+    .prep-b {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: clamp(1rem, 2vw, 2rem);
+        align-items: start;
+    }
+
+    .prep-b > .frame--arch:first-child { grid-column: 1 / 6; }
+    .prep-b > .frame--lift { grid-column: 7 / 11; margin-top: 12vh; }
+
+    .prep-b > .sidenote {
+        grid-column: 12 / 13;
+        justify-self: center;
+        align-self: stretch;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        text-align: right;
+        padding-block: 2rem;
+    }
+
+    /* ══ II — Details: staggered film strip + the cake ══ */
+    .strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: clamp(1rem, 2.2vw, 2.2rem);
+        align-items: start;
+        margin-bottom: clamp(5rem, 11vh, 9rem);
+    }
+
+    .strip > .frame--stagger { margin-top: clamp(2.5rem, 6vh, 5rem); }
+
+    .cake-row {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: clamp(1rem, 2vw, 2rem);
+        align-items: center;
+    }
+
+    .cake-row > .frame { grid-column: 2 / 7; }
+    .cake-text { grid-column: 8 / 12; }
+
+    .cake-sub {
+        margin-top: 1.5rem;
+        font: 500 .65rem/1.6 var(--ui);
+        letter-spacing: .22em;
+        text-transform: uppercase;
+        color: var(--ink-40);
+    }
+
+    /* ══ III — Ceremony (night) ══ */
+    .cer-a {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: clamp(1rem, 2vw, 2rem);
+        align-items: start;
+        margin-block: clamp(4rem, 9vh, 7rem);
+    }
+
+    .cer-a > .frame--arch { grid-column: 2 / 6; }
+    .cer-a > .frame--lift { grid-column: 7 / 12; margin-top: 14vh; }
+
+    .cer-b {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: clamp(1rem, 2vw, 2rem);
+        align-items: start;
+    }
+
+    .cer-b > .frame:first-child { grid-column: 1 / 7; }
+    .cer-b > .frame--drop { grid-column: 8 / 13; margin-top: 12vh; }
+
+    /* ══ IV — Portraits ══ */
+    .port-a {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: clamp(1rem, 2vw, 2rem);
+        align-items: center;
+        margin-bottom: clamp(4rem, 9vh, 7rem);
+    }
+
+    .port-a > .frame--arch { grid-column: 1 / 6; }
+    .port-a > .intertitle { grid-column: 8 / 12; }
+
+    .port-b {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: clamp(1rem, 2vw, 2rem);
+        align-items: end;
+        margin-bottom: clamp(2rem, 4vh, 3rem);
+    }
+
+    .port-b > .frame--arch { grid-column: 4 / 9; }
+    .port-b > .sidenote { grid-column: 10 / 13; padding-bottom: 2.5rem; }
+
+    .port-c {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: clamp(1rem, 2vw, 2rem);
+        align-items: center;
+        margin-block: clamp(4rem, 9vh, 7rem);
+    }
+
+    .port-c > .intertitle { grid-column: 2 / 6; }
+    .port-c > .frame--arch { grid-column: 8 / 12; }
+
+    .port-d {
+        margin-top: clamp(4.5rem, 10vh, 8rem);
+        display: grid;
+        justify-items: center;
+        gap: clamp(2rem, 4vh, 3rem);
+    }
+
+    .port-d > .frame { width: min(470px, 80vw); }
+    .port-d > .intertitle { max-width: 22em; }
+
+    /* ══ V — Dinner: triptych ══ */
+    .triptych {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: clamp(1rem, 2.2vw, 2.2rem);
+        align-items: start;
+        margin-top: clamp(4rem, 9vh, 7rem);
+    }
+
+    .triptych > .frame--stagger { margin-top: clamp(2.5rem, 7vh, 6rem); }
+
+    /* ══ VI — Party (night): cascade + the lift ══ */
+    .party-duo {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: clamp(1rem, 2vw, 2rem);
+        margin-bottom: clamp(6rem, 14vh, 11rem);
+    }
+
+    .party-duo > .frame--tilt-l {
+        grid-column: 1 / 8;
+        grid-row: 1;
+        transform: rotate(-1.4deg);
+        box-shadow: 0 40px 90px -40px rgba(0, 0, 0, .65);
+    }
+
+    .party-duo > .frame--tilt-r {
+        grid-column: 6 / 13;
+        grid-row: 1;
+        margin-top: 20vh;
+        transform: rotate(1.4deg);
+        box-shadow: 0 40px 90px -40px rgba(0, 0, 0, .65);
+    }
+
+    .party-lift {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: clamp(1rem, 2vw, 2rem);
+        align-items: center;
+    }
+
+    .party-lift > .intertitle { grid-column: 1 / 6; }
+
+    .party-lift > .frame {
+        grid-column: 8 / 13;
+        max-width: 560px;
+        justify-self: end;
+        width: 100%;
+    }
+}
+
+/* night-section frames get a whisper of separation from the dark */
+.chapter--night .frame-media,
+.chapter--night .frame--mat {
+    border: 1px solid rgba(244, 239, 228, .1);
+}

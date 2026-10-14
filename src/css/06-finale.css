@@ -1,0 +1,80 @@
+/* ─── FINALE — marquee, closing lines, colophon ─── */
+
+.finale {
+    background: var(--night);
+    color: var(--cream);
+}
+
+.marquee {
+    overflow: hidden;
+    border-block: 1px solid var(--line-light);
+    padding-block: clamp(.9rem, 2vh, 1.3rem);
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    white-space: nowrap;
+    font: italic 300 clamp(1.25rem, 2.2vw, 2rem)/1.2 var(--display);
+    color: var(--cream-40);
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-track i { color: var(--swan); font-style: italic; }
+
+@keyframes marquee {
+    to { transform: translateX(-50%); }
+}
+
+.finale-body {
+    text-align: center;
+    padding: clamp(6rem, 16vh, 11rem) var(--gutter) clamp(4.5rem, 9vh, 7rem);
+}
+
+.finale-time {
+    font: 500 .7rem/1 var(--ui);
+    letter-spacing: .34em;
+    color: var(--brass);
+    margin-bottom: clamp(2rem, 5vh, 3.2rem);
+}
+
+.finale-lines { margin-bottom: clamp(3.5rem, 8vh, 6rem); }
+
+.finale-line {
+    display: block;
+    font: 300 clamp(2.7rem, 6.4vw, 6.4rem)/1.08 var(--display);
+    letter-spacing: -.015em;
+}
+
+.finale-line--em {
+    font-style: italic;
+    color: var(--swan);
+}
+
+.finale-names {
+    font: italic 300 clamp(2rem, 3.8vw, 3.4rem)/1.1 var(--display);
+}
+
+.finale-names em { color: var(--brass); }
+
+.finale-where {
+    margin-top: 1.3rem;
+    font: 500 .66rem/1.6 var(--ui);
+    letter-spacing: .26em;
+    text-transform: uppercase;
+    color: var(--cream-60);
+}
+
+.colophon {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--line-light);
+    padding: 1.7rem var(--gutter);
+    padding-left: var(--pad-l);
+    font: 500 .6rem/1.6 var(--ui);
+    letter-spacing: .24em;
+    text-transform: uppercase;
+    color: var(--cream-40);
+}

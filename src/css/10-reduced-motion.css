@@ -1,0 +1,20 @@
+/* ─── REDUCED MOTION — everything simply present ─── */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html { scroll-behavior: auto; }
+
+    *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+
+    .marquee-track { animation: none !important; flex-wrap: wrap; white-space: normal; width: 100%; justify-content: center; }
+    .marquee-track span:nth-child(n+2) { display: none; }
+
+    .hero-line-in { transform: none; }
+    .reveal-hero { opacity: 1; transform: none; }
+    .hero-img { animation: none; transform: none; }
+    .frame-media img { transform: none; }
+}

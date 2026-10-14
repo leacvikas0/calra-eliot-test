@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Clara &amp; Elliot &mdash; Hatley Castle</title>
+  <meta name="description" content="The wedding of Clara &amp; Elliot at Hatley Castle, Victoria BC &mdash; July 2025. One summer day, told on a clock.">
+  <meta name="theme-color" content="#0d110b">
+
+  <!-- Open Graph — rich link previews on WhatsApp / iMessage / social -->
+  <meta property="og:title" content="Clara & Elliot — Hatley Castle">
+  <meta property="og:description" content="A bespoke wedding story website. Private, beautiful, hosted for life.">
+  <meta property="og:image" content="https://clara-elliot.pages.dev/images/hero-tree.webp">
+  <meta property="og:url" content="https://clara-elliot.pages.dev">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Preload critical assets -->
+  <link rel="preload" href="images/hero-tree.webp" as="image" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top">
+  <!-- ─── PRELOADER — quiet title card, dismisses on load ─── -->
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-card">
+      <p class="pre-kicker">A wedding story in six chapters</p>
+      <h1 class="pre-names">Clara <span class="pre-amp">&amp;</span> Elliot</h1>
+      <div class="pre-rule"><span class="pre-rule-fill"></span></div>
+      <p class="pre-where">Hatley Castle &middot; Victoria, BC &middot; July 2025</p>
+    </div>
+  </div>
+  <!-- ─── HERO / COVER ─── -->
+  <header class="hero" id="cover">
+    <div class="hero-media" data-parallax="14">
+      <img src="images/hero-tree.webp" alt="The ceremony beneath the ancient tree at Hatley Castle" class="hero-img"
+        decoding="async" fetchpriority="high">
+    </div>
+    <div class="hero-shade" aria-hidden="true"></div>
+
+    <div class="hero-ui">
+      <div class="hero-top">
+        <p class="hero-kicker reveal-hero">A wedding story in six chapters</p>
+        <p class="hero-place reveal-hero">Hatley Castle &middot; Victoria, BC</p>
+      </div>
+
+      <div class="hero-bottom">
+        <h1 class="hero-names">
+          <span class="hero-line"><span class="hero-line-in">Clara</span></span>
+          <span class="hero-line hero-line--2"><span class="hero-line-in"><em>&amp;</em> Elliot</span></span>
+        </h1>
+        <div class="hero-meta">
+          <p class="hero-date reveal-hero">July 2025</p>
+          <p class="hero-hours reveal-hero">08:00 &mdash; 23:59, one summer day</p>
+          <a class="hero-cue reveal-hero" href="#prologue">
+            <span class="hero-cue-label">Begin</span>
+            <span class="hero-cue-arrow" aria-hidden="true">&darr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <!-- ─── READING SPINE — fixed chapter timeline, desktop only ─── -->
+  <nav class="spine" aria-label="Story chapters">
+    <a class="spine-brand" href="#cover">C<i>&amp;</i>E</a>
+    <ol class="spine-list">
+      <li class="spine-track" aria-hidden="true"><span class="spine-fill"></span></li>
+      <li><a href="#cover" data-spine="cover"><span class="sp-time">&mdash;</span><span class="sp-name">Cover</span></a></li>
+      <li><a href="#ch-prep" data-spine="ch-prep"><span class="sp-time">08:00</span><span class="sp-name">Getting Ready</span></a></li>
+      <li><a href="#ch-details" data-spine="ch-details"><span class="sp-time">11:20</span><span class="sp-name">Details</span></a></li>
+      <li><a href="#ch-ceremony" data-spine="ch-ceremony"><span class="sp-time">15:00</span><span class="sp-name">Ceremony</span></a></li>
+      <li><a href="#ch-portraits" data-spine="ch-portraits"><span class="sp-time">17:30</span><span class="sp-name">Portraits</span></a></li>
+      <li><a href="#ch-dinner" data-spine="ch-dinner"><span class="sp-time">19:45</span><span class="sp-name">Dinner</span></a></li>
+      <li><a href="#ch-party" data-spine="ch-party"><span class="sp-time">21:45</span><span class="sp-name">Party</span></a></li>
+      <li><a href="#finale" data-spine="finale"><span class="sp-time">23:59</span><span class="sp-name">Finale</span></a></li>
+    </ol>
+  </nav>
+    <!-- ─── PROLOGUE — intertitle ─── -->
+    <section class="prologue" id="prologue">
+      <div class="wrap">
+        <p class="intertitle-label reveal">The short version</p>
+        <blockquote class="intertitle intertitle--big reveal">
+          &ldquo;If you know Clara and Elliot, you know they don&rsquo;t do anything by the book. It had to be a castle.
+          It had to be <em>a swan with a crown</em>. It had to be magic.&rdquo;
+        </blockquote>
+        <p class="intertitle-credit reveal">&mdash; overheard, more than once, in the months before</p>
+      </div>
+    </section>
+    <!-- ─── CHAPTER I — THE GETTING READY ─── -->
+    <section class="chapter chapter--paper" id="ch-prep">
+      <div class="wrap">
+
+        <header class="chead">
+          <div class="chead-meta reveal">
+            <span class="chead-ch">Chapter One</span>
+            <span class="chead-time">08:00</span>
+          </div>
+          <h2 class="chead-title reveal">The <em>Getting&nbsp;Ready</em></h2>
+          <span class="chead-ghost" aria-hidden="true">I</span>
+        </header>
+
+        <div class="prep-a">
+          <figure class="frame frame--wide reveal" data-lb>
+            <div class="frame-media" data-parallax="7"><img src="images/prep-mirror.webp" alt="Clara in the mirror, almost ready" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">08:12</span><span class="stamp-label">the mirror</span></figcaption>
+          </figure>
+          <figure class="frame frame--wide frame--drop reveal" data-lb>
+            <div class="frame-media" data-parallax="9"><img src="images/prep-room.webp" alt="The getting-ready room, dresses and daylight" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">08:47</span><span class="stamp-label">the room</span></figcaption>
+          </figure>
+        </div>
+
+        <p class="intertitle intertitle--side reveal">A house full of people, but in these few moments,
+          the world shrank down to just her.</p>
+
+        <div class="prep-b">
+          <figure class="frame frame--arch reveal" data-lb>
+            <div class="frame-media frame-media--arch" data-parallax="8"><img src="images/prep-laughing.webp" alt="Clara laughing, black and white" loading="lazy" decoding="async" style="object-position:center 38%"></div>
+            <figcaption class="stamp"><span class="stamp-time">09:05</span><span class="stamp-label">the laugh</span></figcaption>
+          </figure>
+          <figure class="frame frame--arch frame--lift reveal" data-lb>
+            <div class="frame-media frame-media--arch" data-parallax="10"><img src="images/prep-stairs.webp" alt="Clara on the stairs, past the wall of family photographs" loading="lazy" decoding="async" style="object-position:center 30%"></div>
+            <figcaption class="stamp"><span class="stamp-time">09:40</span><span class="stamp-label">the stairs</span></figcaption>
+          </figure>
+          <p class="sidenote reveal">Walking past the life they&rsquo;d already built,<br>on her way to the one they were about to begin.</p>
+        </div>
+
+      </div>
+    </section>
+    <!-- ─── CHAPTER II — THE DETAILS ─── -->
+    <section class="chapter chapter--stone" id="ch-details">
+      <div class="wrap">
+
+        <header class="chead">
+          <div class="chead-meta reveal">
+            <span class="chead-ch">Chapter Two</span>
+            <span class="chead-time">11:20</span>
+          </div>
+          <h2 class="chead-title reveal">The <em>Details</em></h2>
+          <span class="chead-ghost" aria-hidden="true">II</span>
+        </header>
+
+        <div class="strip">
+          <figure class="frame reveal" data-lb>
+            <div class="frame-media frame-media--45" data-parallax="6"><img src="images/detail-bw-flat.webp" alt="The accessories, laid out in black and white" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">11:20</span><span class="stamp-label">the accessories</span></figcaption>
+          </figure>
+          <figure class="frame frame--stagger reveal" data-lb>
+            <div class="frame-media frame-media--45" data-parallax="8"><img src="images/detail-shoes.webp" alt="The bridal shoes" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">11:25</span><span class="stamp-label">the shoes</span></figcaption>
+          </figure>
+          <figure class="frame reveal" data-lb>
+            <div class="frame-media frame-media--45" data-parallax="6"><img src="images/detail-lamp.webp" alt="A lamp, and a pair of dice" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">11:31</span><span class="stamp-label">the lamp &amp; the dice</span></figcaption>
+          </figure>
+          <figure class="frame frame--stagger reveal" data-lb>
+            <div class="frame-media frame-media--45" data-parallax="8"><img src="images/detail-limes.webp" alt="The lime arrangement" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">11:38</span><span class="stamp-label">the limes</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="cake-row">
+          <figure class="frame frame--mat reveal" data-lb>
+            <div class="frame-media frame-media--34" data-parallax="7"><img src="images/detail-cake.webp" alt="The blue swan cake, crowned, with cherries" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">11:52</span><span class="stamp-label">the cake</span></figcaption>
+          </figure>
+          <div class="cake-text">
+            <p class="intertitle reveal">Three tiers of<br><em>&ldquo;we do what we want.&rdquo;</em></p>
+            <p class="cake-sub reveal">Blue, because of course it was.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ─── CHAPTER III — THE CEREMONY (dark) ─── -->
+    <section class="chapter chapter--night" id="ch-ceremony" data-theme="dark">
+      <div class="wrap">
+
+        <header class="chead chead--light">
+          <div class="chead-meta reveal">
+            <span class="chead-ch">Chapter Three</span>
+            <span class="chead-time">15:00</span>
+          </div>
+          <h2 class="chead-title reveal">The <em>Ceremony</em></h2>
+          <span class="chead-ghost" aria-hidden="true">III</span>
+        </header>
+      </div>
+
+      <figure class="bleed reveal" data-lb>
+        <div class="bleed-media" data-parallax="10"><img src="images/ceremony-castle.webp" alt="Hatley Castle in the afternoon green" loading="lazy" decoding="async"></div>
+        <figcaption class="stamp stamp--onimg"><span class="stamp-time">14:52</span><span class="stamp-label">the castle</span></figcaption>
+      </figure>
+
+      <div class="wrap">
+        <p class="intertitle intertitle--center reveal">An ancient tree, a summer afternoon, and a promise
+          that had been true long before it was spoken aloud.</p>
+
+        <figure class="frame frame--cinema reveal" data-lb>
+          <div class="frame-media frame-media--219" data-parallax="8"><img src="images/ceremony-stairs.webp" alt="Clara descending the stone stairs" loading="lazy" decoding="async" style="object-position:center 30%"></div>
+          <figcaption class="stamp"><span class="stamp-time">15:04</span><span class="stamp-label">the stairs</span></figcaption>
+        </figure>
+
+        <div class="cer-a">
+          <figure class="frame frame--arch reveal" data-lb>
+            <div class="frame-media frame-media--arch" data-parallax="9"><img src="images/ceremony-groom-wait.webp" alt="Elliot waiting at the altar, black and white" loading="lazy" decoding="async" style="object-position:center 30%"></div>
+            <figcaption class="stamp"><span class="stamp-time">15:06</span><span class="stamp-label">the wait</span></figcaption>
+          </figure>
+          <figure class="frame frame--lift reveal" data-lb>
+            <div class="frame-media frame-media--43" data-parallax="6"><img src="images/ceremony-aisle.webp" alt="Clara walking down the aisle with her parents" loading="lazy" decoding="async" style="object-position:center 40%"></div>
+            <figcaption class="stamp"><span class="stamp-time">15:11</span><span class="stamp-label">the aisle</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <figure class="bleed bleed--tall reveal" data-lb>
+        <div class="bleed-media" data-parallax="12"><img src="images/ceremony-tree.webp" alt="The ceremony beneath the ancient tree" loading="lazy" decoding="async"></div>
+        <figcaption class="stamp stamp--onimg"><span class="stamp-time">15:26</span><span class="stamp-label">the vows</span></figcaption>
+      </figure>
+
+      <div class="wrap">
+        <div class="cer-b">
+          <figure class="frame reveal" data-lb>
+            <div class="frame-media frame-media--1610" data-parallax="6"><img src="images/ceremony-kiss.webp" alt="The kiss" loading="lazy" decoding="async" style="object-position:center 40%"></div>
+            <figcaption class="stamp"><span class="stamp-time">15:47</span><span class="stamp-label">the kiss</span></figcaption>
+          </figure>
+          <figure class="frame frame--drop reveal" data-lb>
+            <div class="frame-media frame-media--1610" data-parallax="8"><img src="images/ceremony-exit.webp" alt="Walking back up the aisle, married" loading="lazy" decoding="async" style="object-position:center 40%"></div>
+            <figcaption class="stamp"><span class="stamp-time">15:58</span><span class="stamp-label">the exit</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- ─── CHAPTER IV — THE PORTRAITS ─── -->
+    <section class="chapter chapter--paper" id="ch-portraits">
+      <div class="wrap">
+
+        <header class="chead">
+          <div class="chead-meta reveal">
+            <span class="chead-ch">Chapter Four</span>
+            <span class="chead-time">17:30</span>
+          </div>
+          <h2 class="chead-title reveal">The <em>Portraits</em></h2>
+          <span class="chead-ghost" aria-hidden="true">IV</span>
+        </header>
+
+        <div class="port-a">
+          <figure class="frame frame--arch reveal" data-lb>
+            <div class="frame-media frame-media--arch" data-parallax="8"><img src="images/portrait-firstlook.webp" alt="The first look" loading="lazy" decoding="async" style="object-position:center 30%"></div>
+            <figcaption class="stamp"><span class="stamp-time">17:30</span><span class="stamp-label">the first look</span></figcaption>
+          </figure>
+          <p class="intertitle intertitle--side reveal">You can know someone for years, and still have
+            your breath taken away in a single second.</p>
+        </div>
+
+        <div class="port-b">
+          <p class="sidenote reveal">The kind of quiet that<br>only belongs to the two of them.</p>
+          <figure class="frame frame--arch reveal" data-lb>
+            <div class="frame-media frame-media--arch" data-parallax="9"><img src="images/portrait-embrace.webp" alt="The two of them, embracing, black and white" loading="lazy" decoding="async" style="object-position:center 40%"></div>
+            <figcaption class="stamp"><span class="stamp-time">17:52</span><span class="stamp-label">the quiet</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <figure class="bleed reveal" data-lb>
+        <div class="bleed-media" data-parallax="10"><img src="images/portrait-wallpaper.webp" alt="A portrait against the tropical wallpaper" loading="lazy" decoding="async" style="object-position:center 40%"></div>
+        <figcaption class="stamp stamp--onimg"><span class="stamp-time">18:10</span><span class="stamp-label">the wallpaper</span></figcaption>
+      </figure>
+
+      <div class="wrap">
+        <div class="port-c">
+          <figure class="frame frame--arch reveal" data-lb>
+            <div class="frame-media frame-media--arch" data-parallax="8"><img src="images/portrait-lounge.webp" alt="Five stolen minutes in the lounge" loading="lazy" decoding="async" style="object-position:center 30%"></div>
+            <figcaption class="stamp"><span class="stamp-time">18:26</span><span class="stamp-label">the lounge</span></figcaption>
+          </figure>
+          <p class="intertitle intertitle--side reveal">Stealing five minutes away from the brilliant
+            chaos of their own wedding.</p>
+        </div>
+
+        <figure class="frame frame--cinema reveal" data-lb>
+          <div class="frame-media frame-media--219" data-parallax="7"><img src="images/portrait-pinkchairs.webp" alt="Pink velvet chairs, two cocktails waiting" loading="lazy" decoding="async"></div>
+          <figcaption class="stamp"><span class="stamp-time">18:41</span><span class="stamp-label">the pink chairs</span></figcaption>
+        </figure>
+        <p class="intertitle intertitle--center reveal">If their romance had a signature drink,
+          this would be the room they&rsquo;d serve it in.</p>
+
+        <figure class="frame frame--cinema reveal" data-lb>
+          <div class="frame-media frame-media--169" data-parallax="6"><img src="images/portrait-bridesmaids.webp" alt="The bridesmaids, anthuriums in hand" loading="lazy" decoding="async" style="object-position:center 40%"></div>
+          <figcaption class="stamp"><span class="stamp-time">18:55</span><span class="stamp-label">the bridesmaids</span></figcaption>
+        </figure>
+
+        <div class="port-d">
+          <figure class="frame frame--arch frame--mat reveal" data-lb>
+            <div class="frame-media frame-media--arch" data-parallax="8"><img src="images/portrait-flash-kiss.webp" alt="A flash-lit kiss in the doorway" loading="lazy" decoding="async" style="object-position:center 40%"></div>
+            <figcaption class="stamp"><span class="stamp-time">19:07</span><span class="stamp-label">the hallway</span></figcaption>
+          </figure>
+          <p class="intertitle intertitle--center reveal">Caught in the hallway, halfway between
+            the ceremony and the rest of their lives.</p>
+        </div>
+      </div>
+    </section>
+    <!-- ─── CHAPTER V — THE DINNER ─── -->
+    <section class="chapter chapter--stone" id="ch-dinner">
+      <div class="wrap">
+        <header class="chead">
+          <div class="chead-meta reveal">
+            <span class="chead-ch">Chapter Five</span>
+            <span class="chead-time">19:45</span>
+          </div>
+          <h2 class="chead-title reveal">The <em>Dinner</em></h2>
+          <span class="chead-ghost" aria-hidden="true">V</span>
+        </header>
+      </div>
+
+      <figure class="bleed reveal" data-lb>
+        <div class="bleed-media" data-parallax="10"><img src="images/dinner-room.webp" alt="The grand dining room, chandeliers lit" loading="lazy" decoding="async"></div>
+        <figcaption class="stamp stamp--onimg"><span class="stamp-time">19:45</span><span class="stamp-label">the room</span></figcaption>
+      </figure>
+
+      <div class="wrap">
+        <p class="intertitle intertitle--center reveal">Candlelight, clinking glasses, and stories that grew
+          slightly more exaggerated with every pour.</p>
+
+        <div class="triptych">
+          <figure class="frame reveal" data-lb>
+            <div class="frame-media frame-media--45" data-parallax="6"><img src="images/dinner-speech.webp" alt="Speeches and laughter, black and white" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">20:15</span><span class="stamp-label">the speeches</span></figcaption>
+          </figure>
+          <figure class="frame frame--stagger reveal" data-lb>
+            <div class="frame-media frame-media--45" data-parallax="8"><img src="images/dinner-cakecut.webp" alt="Cutting the swan cake" loading="lazy" decoding="async" style="object-position:center 40%"></div>
+            <figcaption class="stamp"><span class="stamp-time">20:48</span><span class="stamp-label">the cutting</span></figcaption>
+          </figure>
+          <figure class="frame reveal" data-lb>
+            <div class="frame-media frame-media--45" data-parallax="6"><img src="images/dinner-cakeeat.webp" alt="Clara, eating the cake" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">20:53</span><span class="stamp-label">the first bite</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- ─── CHAPTER VI — THE PARTY (dark) ─── -->
+    <section class="chapter chapter--night" id="ch-party" data-theme="dark">
+      <div class="wrap">
+
+        <header class="chead chead--light">
+          <div class="chead-meta reveal">
+            <span class="chead-ch">Chapter Six</span>
+            <span class="chead-time">21:45</span>
+          </div>
+          <h2 class="chead-title reveal">The <em>Party</em></h2>
+          <span class="chead-ghost" aria-hidden="true">VI</span>
+        </header>
+
+        <div class="party-duo">
+          <figure class="frame frame--tilt-l reveal" data-lb>
+            <div class="frame-media frame-media--1610" data-parallax="7"><img src="images/party-dance1.webp" alt="Clara spinning on the dance floor" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">21:52</span><span class="stamp-label">the first spin</span></figcaption>
+          </figure>
+          <figure class="frame frame--tilt-r reveal" data-lb>
+            <div class="frame-media frame-media--1610" data-parallax="9"><img src="images/party-dance2.webp" alt="Leading the dance floor" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">22:20</span><span class="stamp-label">the floor</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="party-lift">
+          <p class="intertitle intertitle--side reveal">The formalities were over. The real celebration
+            had finally found its footing.</p>
+          <figure class="frame frame--mat reveal" data-lb>
+            <div class="frame-media frame-media--45" data-parallax="8"><img src="images/party-lift.webp" alt="The lift" loading="lazy" decoding="async"></div>
+            <figcaption class="stamp"><span class="stamp-time">22:47</span><span class="stamp-label">the lift</span></figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!-- ─── FINALE ─── -->
+  <footer class="finale" id="finale" data-theme="dark">
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Clara <i>&amp;</i> Elliot &nbsp;&middot;&nbsp; Hatley Castle &nbsp;&middot;&nbsp; July 2025 &nbsp;&middot;&nbsp; </span><span>Clara <i>&amp;</i> Elliot &nbsp;&middot;&nbsp; Hatley Castle &nbsp;&middot;&nbsp; July 2025 &nbsp;&middot;&nbsp; </span><span>Clara <i>&amp;</i> Elliot &nbsp;&middot;&nbsp; Hatley Castle &nbsp;&middot;&nbsp; July 2025 &nbsp;&middot;&nbsp; </span><span>Clara <i>&amp;</i> Elliot &nbsp;&middot;&nbsp; Hatley Castle &nbsp;&middot;&nbsp; July 2025 &nbsp;&middot;&nbsp; </span>
+      </div>
+    </div>
+
+    <div class="finale-body">
+      <p class="finale-time reveal">23:59</p>
+      <p class="finale-lines">
+        <span class="finale-line reveal">The night ended.</span>
+        <span class="finale-line finale-line--em reveal">The story continues.</span>
+      </p>
+      <h2 class="finale-names reveal">Clara <em>&amp;</em> Elliot</h2>
+      <p class="finale-where reveal">Hatley Castle &middot; Victoria, BC &middot; July 2025</p>
+    </div>
+
+    <div class="colophon">
+      <span>A keepsake, hosted for life</span>
+      <span>Chapters I &ndash; VI</span>
+      <span>MMXXV</span>
+    </div>
+  </footer>
+  <script src="lib/gsap.min.js"></script>
+  <script src="lib/ScrollTrigger.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

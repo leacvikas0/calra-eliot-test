@@ -1,0 +1,95 @@
+/* ─── LIGHTBOX — cinematic viewer ─── */
+
+.lb-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(9, 8, 6, .96);
+    color: var(--cream);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .45s var(--ease), visibility .45s;
+}
+
+.lb-overlay.is-open { opacity: 1; visibility: visible; }
+
+.lb-img {
+    width: auto;
+    height: auto;
+    max-width: 88vw;
+    max-height: 80vh;
+    object-fit: contain;
+    box-shadow: 0 40px 120px rgba(0, 0, 0, .55);
+    transform: scale(.96);
+    transition: transform .45s var(--ease);
+}
+
+.lb-overlay.is-open .lb-img { transform: scale(1); }
+
+.lb-cap {
+    position: absolute;
+    left: var(--gutter);
+    bottom: 1.7rem;
+    max-width: 60vw;
+    font: italic 400 1.05rem/1.5 var(--serif);
+    color: var(--cream-60);
+}
+
+.lb-count {
+    position: absolute;
+    right: var(--gutter);
+    bottom: 1.7rem;
+    font: 500 .68rem/1.5 var(--ui);
+    letter-spacing: .2em;
+    color: var(--cream-60);
+    font-variant-numeric: tabular-nums;
+}
+
+.lb-close,
+.lb-prev,
+.lb-next {
+    position: absolute;
+    background: none;
+    border: 1px solid rgba(244, 239, 228, .3);
+    color: var(--cream);
+    font: 500 .64rem/1 var(--ui);
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .35s var(--ease), color .35s var(--ease), border-color .35s var(--ease);
+}
+
+.lb-close:hover,
+.lb-prev:hover,
+.lb-next:hover {
+    background: var(--cream);
+    color: var(--night);
+    border-color: var(--cream);
+}
+
+.lb-close {
+    top: 1.5rem;
+    right: var(--gutter);
+    padding: .8rem 1.2rem;
+    border-radius: 999px;
+}
+
+.lb-prev,
+.lb-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    letter-spacing: 0;
+}
+
+.lb-prev { left: var(--gutter); }
+.lb-next { right: var(--gutter); }
+
+/* frames that open the lightbox read as interactive */
+[data-lb] { cursor: pointer; }

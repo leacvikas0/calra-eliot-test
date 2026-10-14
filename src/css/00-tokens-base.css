@@ -1,0 +1,89 @@
+/* ═══════════════════════════════════════════
+   CLARA & ELLIOT — styles entry
+   Built from src/css/* via: npm run build
+   Design system: "One summer day, told on a clock"
+   Tokens + base reset. Do not edit styles.css directly.
+   ═══════════════════════════════════════════ */
+
+:root {
+    /* palette — castle garden at dusk */
+    --paper: #f1ebe0;
+    --stone: #e8dfcd;
+    --night: #0d110b;
+    --ink: #1d1811;
+    --ink-60: rgba(29, 24, 17, .6);
+    --ink-40: rgba(29, 24, 17, .4);
+    --ink-25: rgba(29, 24, 17, .25);
+    --cream: #f4efe4;
+    --cream-60: rgba(244, 239, 228, .62);
+    --cream-40: rgba(244, 239, 228, .4);
+    --moss: #46523b;
+    --brass: #a5824a;
+    --swan: #6e8ca0;
+    --line: rgba(29, 24, 17, .16);
+    --line-light: rgba(244, 239, 228, .22);
+
+    /* type */
+    --display: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --serif: 'EB Garamond', Georgia, serif;
+    --ui: 'DM Sans', system-ui, -apple-system, sans-serif;
+
+    /* layout */
+    --gutter: clamp(1.25rem, 4vw, 4.5rem);
+    --pad-l: var(--gutter);
+    --max: 1680px;
+    --ease: cubic-bezier(.16, 1, .3, 1);
+}
+
+@media (min-width: 1300px) {
+    :root { --pad-l: calc(var(--gutter) + 220px); }
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+    overflow-x: clip;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 clamp(.98rem, .55vw + .85rem, 1.1rem)/1.75 var(--serif);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+}
+
+body.is-loading { overflow: hidden; }
+body.lb-open { overflow: hidden; }
+
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+::selection { background: var(--swan); color: var(--paper); }
+
+:focus-visible {
+    outline: 2px solid var(--swan);
+    outline-offset: 3px;
+    border-radius: 1px;
+}
+
+/* thin quiet scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--paper); }
+::-webkit-scrollbar-thumb { background: rgba(29, 24, 17, .25); border-radius: 5px; border: 2px solid var(--paper); }
+::-webkit-scrollbar-thumb:hover { background: rgba(29, 24, 17, .45); }
+
+.wrap {
+    max-width: var(--max);
+    margin-inline: auto;
+    padding-inline: var(--pad-l) var(--gutter);
+}
+
+/* small-caps utility label */
+.uc {
+    font-family: var(--ui);
+    font-weight: 500;
+    font-size: .66rem;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+}

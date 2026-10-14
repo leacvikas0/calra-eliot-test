@@ -1,0 +1,118 @@
+/* ─── RESPONSIVE — the desktop composition collapses with intent ─── */
+
+/* large laptop: spine tucks away, content recenters */
+@media (max-width: 1299px) {
+    :root { --pad-l: var(--gutter); }
+}
+
+/* below the editorial grid threshold: stack with rhythm */
+@media (max-width: 1099px) {
+
+    .prep-a,
+    .prep-b,
+    .cake-row,
+    .cer-a,
+    .cer-b,
+    .port-a,
+    .port-b,
+    .port-c,
+    .port-d,
+    .party-duo,
+    .party-lift {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: clamp(2.5rem, 7vh, 4.5rem);
+        margin-bottom: clamp(2.5rem, 7vh, 4.5rem);
+    }
+
+    /* neutralise every desktop offset */
+    .prep-a > .frame--drop,
+    .prep-b > .frame--lift,
+    .cer-a > .frame--lift,
+    .cer-b > .frame--drop,
+    .party-duo > .frame--tilt-l,
+    .party-duo > .frame--tilt-r {
+        margin-top: 0;
+        transform: none;
+    }
+
+    #ch-prep > .wrap > .intertitle--side {
+        margin-left: 0;
+        padding-right: 0;
+        margin-bottom: clamp(2.5rem, 7vh, 4.5rem);
+    }
+
+    .prep-b > .sidenote {
+        writing-mode: horizontal-tb;
+        transform: none;
+        text-align: left;
+        padding-block: 0;
+    }
+
+    .port-b > .sidenote { padding-bottom: 0; }
+
+    .port-d { justify-items: stretch; }
+    .port-d > .frame { width: min(470px, 100%); margin-inline: auto; }
+    .port-d > .intertitle { text-align: center; margin-inline: auto; }
+
+    .party-lift > .frame { justify-self: stretch; max-width: none; }
+
+    /* strip and triptych: two-across rhythm */
+    .strip,
+    .triptych {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: clamp(1rem, 3vw, 1.75rem);
+        row-gap: clamp(2.5rem, 6vh, 4rem);
+        align-items: start;
+    }
+
+    .strip { margin-bottom: clamp(4rem, 8vh, 6rem); }
+    .triptych { margin-top: clamp(3rem, 7vh, 5rem); }
+
+    .cake-text { max-width: 30em; }
+}
+
+/* phones */
+@media (max-width: 700px) {
+
+    .hero { min-height: 540px; }
+
+    .hero-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+    }
+
+    .hero-meta { justify-items: start; text-align: left; }
+
+    .hero-top { flex-direction: column; gap: .5rem; }
+
+    .chead-ghost {
+        font-size: clamp(6rem, 26vw, 9rem);
+        top: -.22em;
+    }
+
+    .chead-title { font-size: clamp(2.6rem, 12vw, 4rem); }
+
+    .strip,
+    .triptych { grid-template-columns: 1fr; }
+
+    .strip > .frame--stagger,
+    .triptych > .frame--stagger { margin-top: 0; }
+
+    .bleed { height: 62vh; min-height: 340px; }
+    .bleed--tall { height: 70vh; }
+
+    .stamp--onimg { left: var(--gutter); }
+
+    .intertitle { font-size: clamp(1.3rem, 5.4vw, 1.7rem); }
+    .intertitle--big { font-size: clamp(1.5rem, 6vw, 2rem); }
+
+    .lb-cap { display: none; }
+
+    .lb-prev { left: .75rem; }
+    .lb-next { right: .75rem; }
+
+    .colophon { justify-content: center; text-align: center; }
+}

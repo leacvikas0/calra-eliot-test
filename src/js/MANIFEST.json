@@ -1,0 +1,9 @@
+[
+  "00-preamble.js",
+  "01-preloader.js",
+  "02-spine.js",
+  "03-motion.js",
+  "04-lightbox.js",
+  "05-cursor.js",
+  "99-boot.js"
+]
